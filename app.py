@@ -24,6 +24,7 @@ st.set_page_config(
     page_title="Pprod | Painel de Produção",
     page_icon="🏭",
     layout="wide"
+    initial_sidebar_state="collapsed"
 )
 
 # =========================================================
