@@ -43,6 +43,25 @@ with col_botao:
 
 st.markdown("""
 <style>
+
+/* 🔴 OCULTAR FULLSCREEN */
+a[href*="utm_medium=embed"] {
+    display: none !important;
+}
+
+/* 🔴 OPCIONAL - remover "Built with Streamlit" */
+footer {
+    visibility: hidden;
+}
+
+/* 🔴 OPCIONAL - remover menu */
+#MainMenu {
+    visibility: hidden;
+}
+
+# AQUI 
+st.markdown("""
+<style>
 .card-kpi {
     background: linear-gradient(180deg, #dceee3 0%, #cfe4d8 100%);
     border: 1px solid #bdd7c7;
