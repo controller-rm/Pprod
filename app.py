@@ -41,9 +41,9 @@ with col_botao:
     if st.button("🔄 Atualizar", use_container_width=True):
         st.rerun()
 
+# AQUI 
 st.markdown("""
 <style>
-
 /* 🔴 OCULTAR FULLSCREEN */
 a[href*="utm_medium=embed"] {
     display: none !important;
@@ -58,10 +58,6 @@ footer {
 #MainMenu {
     visibility: hidden;
 }
-
-# AQUI 
-st.markdown("""
-<style>
 .card-kpi {
     background: linear-gradient(180deg, #dceee3 0%, #cfe4d8 100%);
     border: 1px solid #bdd7c7;
