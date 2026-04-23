@@ -1102,10 +1102,14 @@ try:
     gb.configure_default_column(editable=False, filter=True, sortable=True, resizable=True)
     gb.configure_grid_options(domLayout="normal", rowHeight=34)
 
-    gb.configure_column("Remover", editable=True, cellEditor="agCheckboxCellEditor", width=90)
-    gb.configure_column("Prioridade", editable=True, width=95)
-    gb.configure_column("Nw_Data", editable=True, width=105)
-    gb.configure_column("Dt.Subida", editable=True, width=105)
+    #gb.configure_column("Remover", editable=True, cellEditor="agCheckboxCellEditor", width=90)
+    #gb.configure_column("Prioridade", editable=True, width=95)
+    #gb.configure_column("Nw_Data", editable=True, width=105)
+    #gb.configure_column("Dt.Subida", editable=True, width=105)
+    gb.configure_column("Remover", editable=True, cellEditor="agTextCellEditor", width=90, pinned="left")
+    gb.configure_column("Prioridade", editable=True, cellEditor=prioridade_editor, cellStyle=prioridade_style, width=90, pinned="left")
+    gb.configure_column("Responsavel", editable=True, cellEditor="agTextCellEditor", width=180, pinned="left")
+    gb.configure_column("Nw_Data", editable=True, cellEditor=date_mask_editor, cellStyle=cell_style_date, width=110, pinned="left")
 
     gb.configure_column("status_prod", width=105)
     gb.configure_column("PrzReal", width=85)
