@@ -4,3 +4,4 @@ python-dotenv==1.2.2
 mysql-connector-python==9.4.0
 plotly==6.0.1
 streamlit-aggrid==1.1.8.post1
+matplotlib
